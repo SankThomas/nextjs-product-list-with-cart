@@ -27,7 +27,7 @@ export default function Products() {
     <section>
       <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
         <h1 className="text-3xl font-bold">Products</h1>
-        <Button onClick={toggle}>Cart ({cartItems.length})</Button>
+        <Button onClick={toggle}>Cart ({cartItems && cartItems.length})</Button>
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
